@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionistMaintenanceFormContext" prefHeight="768.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MaintenanceFormController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/RdashboardBg.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d2d2" height="81.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+      <Label layoutX="14.0" layoutY="10.0" text="Receptionist">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <TextField layoutX="650.0" layoutY="26.0" prefHeight="40.0" prefWidth="521.0" promptText="search" />
+      <JFXButton layoutX="345.0" layoutY="26.0" onAction="#rHomeOnAction" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: lightBlue;" text="Home" />
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="345.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_home_black_24dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="511.0" layoutY="26.0" onAction="#rBackOnAction" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: lightBlue;" text="Back" />
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="511.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_arrow_back_black_24dp.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="93.0" layoutY="132.0" style="-fx-background-color: brown;" text="Total Rooms-25" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="212.0" text="Reserved" textFill="#14ff57">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbAvailable" layoutX="364.0" layoutY="281.0" prefHeight="51.0" prefWidth="246.0" />
+      <ComboBox fx:id="cmbReserved" layoutX="364.0" layoutY="215.0" prefHeight="51.0" prefWidth="246.0" />
+      <ComboBox fx:id="cmbMaintenance" layoutX="364.0" layoutY="352.0" prefHeight="51.0" prefWidth="246.0" />
+      <JFXButton layoutX="292.0" layoutY="561.0" onAction="#addToMaintenanceOnAction" style="-fx-background-color: yellow;" text="Add To Maintenance">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="106.0" layoutY="281.0" text="Available" textFill="#14ff4a">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="350.0" text="Maintenance" textFill="#ff1414">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="548.0" layoutY="146.0" text="No" textFill="#14ff57">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="441.0" text="Room No" textFill="#14ffd6">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbRoomNo" layoutX="302.0" layoutY="444.0" prefHeight="51.0" prefWidth="246.0" />
+   </children>
+</AnchorPane>

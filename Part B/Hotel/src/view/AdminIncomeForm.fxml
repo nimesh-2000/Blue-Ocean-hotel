@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminIncomeFormContext" prefHeight="768.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminIncomeFormController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1300.0" layoutX="14.0" layoutY="48.0" opacity="0.49" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/AdashboardBg-min.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ced9e4" height="95.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+      <Label layoutX="14.0" layoutY="16.0" text="Admin">
+         <font>
+            <Font name="System Bold" size="43.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="300.0" layoutY="33.0" onAction="#adminIncomeHomeOnAction" prefHeight="50.0" prefWidth="111.0" style="-fx-background-color: lightBlue;" text="     Home" />
+      <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="300.0" layoutY="33.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_home_black_24dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="460.0" layoutY="33.0" onAction="#adminIncomeBackOnAction" prefHeight="50.0" prefWidth="111.0" style="-fx-background-color: lightBlue;" text="      Back" />
+      <ImageView fitHeight="50.0" fitWidth="52.0" layoutX="460.0" layoutY="33.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_arrow_back_black_24dp.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="621.0" layoutY="32.0" prefHeight="42.0" prefWidth="437.0" promptText="search" />
+      <ImageView fitHeight="506.0" fitWidth="545.0" layoutX="67.0" layoutY="235.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/colorful-growth-graph-icon-isolated.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="506.0" fitWidth="578.0" layoutX="641.0" layoutY="235.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/1000_F_319257315_UStRum67fFC1f2BGMcFiUsK4E81uzL2J.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="144.0" layoutY="179.0" text="Monthly Income ">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font></Label>
+      <Label layoutX="774.0" layoutY="179.0" text="Yearly Income ">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Separator layoutX="618.0" layoutY="95.0" orientation="VERTICAL" prefHeight="721.0" prefWidth="15.0" />
+      <Label layoutX="657.0" layoutY="624.0" text="2010">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="703.0" layoutY="547.0" text="2011">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="748.0" layoutY="661.0" text="2012">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="795.0" layoutY="682.0" text="2013">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="840.0" layoutY="661.0" text="2014">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="635.0" text="2015">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1023.0" layoutY="517.0" text="2018">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="969.0" layoutY="468.0" text="2017">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="930.0" layoutY="591.0" text="2016">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1066.0" layoutY="468.0" text="2019">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1110.0" layoutY="353.0" text="2020">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="1158.0" layoutY="275.0" text="2021">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="144.0" layoutY="693.0" text="Jan">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="267.0" layoutY="693.0" text="Feb">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="386.0" layoutY="693.0" text="Mar">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="503.0" layoutY="693.0" text="Apr">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

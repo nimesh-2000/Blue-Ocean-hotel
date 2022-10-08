@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDashboardFormContext" prefHeight="768.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashboardFormController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/AdashboardBg-min.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="81.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="1300.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#aab5bf" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="14.0" layoutY="12.0" text="Admin">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField layoutX="482.0" layoutY="26.0" prefHeight="31.0" prefWidth="473.0" promptText="search" />
+      <JFXButton layoutX="213.0" layoutY="26.0" onAction="#aHomeOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: lightBlue;" text="Home" />
+      <ImageView fitHeight="40.0" fitWidth="32.0" layoutX="209.0" layoutY="25.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_home_black_24dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="371.0" layoutY="26.0" onAction="#aBackOnAction" prefHeight="40.0" prefWidth="100.0" style="-fx-background-color: lightBlue;" text="Back" />
+      <ImageView fitHeight="40.0" fitWidth="32.0" layoutX="371.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_arrow_back_black_24dp.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cddbe8" height="200.0" layoutX="40.0" layoutY="129.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c6d7e8" height="200.0" layoutX="40.0" layoutY="343.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c4e2ff" height="200.0" layoutX="40.0" layoutY="554.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="129.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_bed_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="343.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_restaurant_menu_black_24dp.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="40.0" layoutY="554.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_bar_chart_black_24dp.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="267.0" text="Rooms" textFill="#d71515">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="493.0" text="Meal Package" textFill="#d71515">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="686.0" text="Income" textFill="#d71515">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="492.0" layoutY="169.0" text="Blue Ocean Hotel" textFill="#0015ff">
+         <font>
+            <Font name="System Bold Italic" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="777.0" layoutY="269.0" text="Room Reservation System" textFill="#0037ff">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="44.0" layoutY="129.0" onAction="#adminRoomOnAction" prefHeight="200.0" prefWidth="190.0" text="Room" />
+      <JFXButton layoutX="46.0" layoutY="343.0" onAction="#adminMealPackageOnAction" prefHeight="200.0" prefWidth="190.0" text="Meal Package" />
+      <JFXButton layoutX="45.0" layoutY="554.0" onAction="#adminIncomeOnAction" prefHeight="200.0" prefWidth="190.0" text="Income" />
+   </children>
+</AnchorPane>

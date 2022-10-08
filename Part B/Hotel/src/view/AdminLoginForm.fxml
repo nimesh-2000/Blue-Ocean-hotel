@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminLoginFormContext" prefHeight="768.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminLoginFormController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/loginBg.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="267.0" layoutY="55.0" text="Blue Ocean Hotel">
+         <font>
+            <Font name="System Bold Italic" size="70.0" />
+         </font>
+      </Label>
+      <Label layoutX="598.0" layoutY="158.0" text="Room Reservation System">
+         <font>
+            <Font name="System Bold Italic" size="31.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="448.0" layoutY="558.0" onAction="#aLoginOnAction" opacity="0.79" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: rgb(26, 188, 156);" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="448.0" layoutY="673.0" onAction="#aCancelOnAction" opacity="0.79" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: rgb(26, 188, 156);" text="Cancel">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="452.0" layoutY="295.0" prefHeight="46.0" prefWidth="165.0" style="-fx-background-color: rgb(52, 152, 219);" text="User Name">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAUserName" layoutX="448.0" layoutY="352.0" prefHeight="40.0" prefWidth="284.0" />
+      <Label layoutX="452.0" layoutY="404.0" prefHeight="46.0" prefWidth="165.0" style="-fx-background-color: rgb(52, 152, 219);" text=" Password">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="pwdAPassword" layoutX="452.0" layoutY="460.0" prefHeight="40.0" prefWidth="284.0" />
+      <Label layoutX="578.0" layoutY="628.0" text="OR" textFill="#e41a1a">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

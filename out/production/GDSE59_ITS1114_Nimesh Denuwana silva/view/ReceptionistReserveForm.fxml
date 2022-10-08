@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionistReserveFormContext" prefHeight="768.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReceptionistReserveFormController">
+   <children>
+      <ImageView fitHeight="768.0" fitWidth="1300.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/RdashboardBg.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d9d2d2" height="81.0" stroke="BLACK" strokeType="INSIDE" width="1300.0" />
+      <Label layoutX="14.0" layoutY="10.0" text="Receptionist">
+         <font>
+            <Font name="System Bold" size="42.0" />
+         </font>
+      </Label>
+      <TextField layoutX="650.0" layoutY="26.0" prefHeight="40.0" prefWidth="521.0" promptText="search" />
+      <JFXButton layoutX="345.0" layoutY="26.0" onAction="#rHomeOnAction" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: lightBlue;" text="Home" />
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="345.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_home_black_24dp.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="511.0" layoutY="26.0" onAction="#rBackOnAction" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: lightBlue;" text="Back" />
+      <ImageView fitHeight="40.0" fitWidth="37.0" layoutX="511.0" layoutY="26.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/outline_arrow_back_black_24dp.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="93.0" layoutY="132.0" text="Add Guest" textFill="#ff1212">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="60.0" layoutY="196.0" prefHeight="31.0" prefWidth="293.0" promptText="Name">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtEmail" layoutX="60.0" layoutY="262.0" prefHeight="31.0" prefWidth="293.0" promptText="Email">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtNic" layoutX="60.0" layoutY="333.0" prefHeight="31.0" prefWidth="293.0" promptText="NIC">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtPhone" layoutX="60.0" layoutY="398.0" prefHeight="31.0" prefWidth="293.0" promptText="Phone">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="60.0" layoutY="465.0" prefHeight="31.0" prefWidth="293.0" promptText="Address">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="471.0" layoutY="132.0" text="Room Info" textFill="#ff1212">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <Label layoutX="877.0" layoutY="132.0" text="Meal Info" textFill="#ff1212">
+         <font>
+            <Font name="System Bold" size="39.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbRoomType" layoutX="436.0" layoutY="197.0" prefHeight="51.0" prefWidth="246.0" promptText="Room Type" />
+      <ComboBox fx:id="cmbMealType" layoutX="832.0" layoutY="196.0" prefHeight="51.0" prefWidth="246.0" promptText="Meal Type" />
+      <ComboBox fx:id="cmbRoomNo" layoutX="436.0" layoutY="262.0" prefHeight="51.0" prefWidth="246.0" promptText="Room No" />
+      <JFXButton layoutX="820.0" layoutY="630.0" onAction="#printTokenOnAction" style="-fx-background-color: yellow;" text="Print Token">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="994.0" layoutY="634.0" text="OR" textFill="RED">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="1046.0" layoutY="630.0" onAction="#emailTokenOnAction" style="-fx-background-color: yellow;" text="Email Token">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
